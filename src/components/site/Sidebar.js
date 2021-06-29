@@ -13,6 +13,8 @@ import PropsDemo from '../concepts/PropDemo';
 import Hooks from '../concepts/Hooks';
 import TimePiecesApp from '../apps/timer-apps/TimePiecesApp';
 import NytApp from '../apps/nyt-app/NytApp';
+import MovieApp from '../apps/the-movie-db/MovieApp';
+import Bitcoin from '../apps/bitcoin-api-app/BitCoin';
 
 const Sidebar = () => {
     return (
@@ -29,6 +31,8 @@ const Sidebar = () => {
                     <li><Link to='/hooks'>Hooks</Link></li>
                     <li><Link to='/timer'>TimePiecesApp</Link></li>
                     <li><Link to='/nytapp'>NYTApp</Link></li>
+                    <li><Link to='/movieapp'>MovieApp</Link></li>
+                    <li><Link to='/bitcoin'>Bitcoin</Link></li>
                 </ul>
             </div>
             <div className='sidebar-route'>
@@ -44,6 +48,8 @@ const Sidebar = () => {
                     <Route exact path='/hooks'><Hooks /></Route>
                     <Route exact path='/timer'><TimePiecesApp /></Route>
                     <Route exact path='/NytApp'><NytApp /></Route>
+                    <Route exact path='/MovieApp'><MovieApp /></Route>
+                    <Route exact path='/Bitcoin'><Bitcoin /></Route>
                 </Switch>
             </div>
         </div>

@@ -14,8 +14,7 @@ const NytResults = (props) => {
                                 {result.keywords.length > 0 ? ' Keywords: ' : ''}
                             </p>
                             <ul>
-                                {result.keywords.map(keyword => <li key={keyword.value}>{keyword.
-                                    value}</li>)}
+                                {result.keywords.map(keyword => <li key={keyword.value}>{keyword.value}</li>)}
                             </ul>
                             <a href={result.web_url}><button>Read It</button></a>
                         </div>
